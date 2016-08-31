@@ -10,7 +10,7 @@ NeuroSwarm is a function approximator that fits an n-dimensional grid of hyperpl
 # Examples
 <p align="center">
   <img src="https://raw.githubusercontent.com/MeepMoop/neuroswarm/master/examples/nnswarm_sincos.png"><br>
-  8x8 NeuroSwarm approximating f(x, y) = sin(x) + cos(y) + N(0, 0.1)<br><br>
+  8x8 NeuroSwarm approximating f(x, y) = sin(x) + cos(y) + <i>N</i>(0, 0.1)<br><br>
   <img src="https://raw.githubusercontent.com/MeepMoop/neuroswarm/master/examples/nnswarm_gaussian.png"><br>
-  9x9 NeuroSwarm approximating f(x, y) = exp(-(x ** 2 + y **2)) + N(0, 0.1)
+  9x9 NeuroSwarm approximating f(x, y) = exp(-(x ** 2 + y **2)) + <i>N</i>(0, 0.1)
 </p>
