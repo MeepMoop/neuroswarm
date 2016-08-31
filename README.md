@@ -8,9 +8,9 @@ NeuroSwarm is a function approximator that fits an n-dimensional grid of hyperpl
 * matplotlib (to run the example)
 
 # Examples
-<p align="center">
+<center>
   <img src="https://raw.githubusercontent.com/MeepMoop/neuroswarm/master/examples/nnswarm_sincos.png"><br>
-  8x8 NeuroSwarm approximating f(x, y) = sin(x) + cos(y) <br><br>
+  8x8 NeuroSwarm approximating f(x, y) = sin(x) + cos(y) + N(0, 0.1)<br><br>
   <img src="https://raw.githubusercontent.com/MeepMoop/neuroswarm/master/examples/nnswarm_gaussian.png"><br>
-  9x9 NeuroSwarm approximating f(x, y) = exp(-(x ** 2 + y **2))
-</p>
+  9x9 NeuroSwarm approximating f(x, y) = exp(-(x ** 2 + y **2)) + N(0, 0.1)
+</center>
