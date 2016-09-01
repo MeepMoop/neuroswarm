@@ -29,5 +29,5 @@ print S[3.3, -2.1, 11.1, 0.7]
   <img src="https://raw.githubusercontent.com/MeepMoop/neuroswarm/master/examples/nnswarm_sincos.png"><br>
   8x8 NeuroSwarm approximating f(x, y) = sin(x) + cos(y) + <i>N</i>(0, 0.1)<br><br>
   <img src="https://raw.githubusercontent.com/MeepMoop/neuroswarm/master/examples/nnswarm_gaussian.png"><br>
-  9x9 NeuroSwarm approximating f(x, y) = exp(-(x ** 2 + y **2)) + <i>N</i>(0, 0.1)
+  9x9 NeuroSwarm approximating f(x, y) = exp(-(x ** 2 + y ** 2)) + <i>N</i>(0, 0.1)
 </p>
