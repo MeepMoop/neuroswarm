@@ -19,13 +19,13 @@ dims = [8, 10, 6, 10]
 lims = [(3.0, 7.5), (-4.4, 4.2), (9.6, 12.7), (0.0, 1.0)]
 
 # create swarm with learning rate 0.2 and momentum 0.8 (default 0.1 and 0.7071 respectively)
-G = nnswarm(dims, lims, 0.2, 0.8)
+s = nnswarm(dims, lims, 0.2, 0.8)
 
 # training iteration with value 5.5 at location (3.3, -2.1, 11.1, 0.7)
-G[3.3, -2.1, 11.1, 0.7] = 5.5
+s[3.3, -2.1, 11.1, 0.7] = 5.5
 
 # get approximated value at (3.3, -2.1, 11.1, 0.7)
-print G[3.3, -2.1, 11.1, 0.7]
+print s[3.3, -2.1, 11.1, 0.7]
 ```
 
 # Examples
