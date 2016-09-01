@@ -10,6 +10,8 @@ NeuroSwarm is a function approximator that fits an n-dimensional grid of hyperpl
 # Usage
 
 ```python
+from neuroswarm import nnswarm
+
 # grid dimensions
 dims = [8, 10, 6, 10]
 # value limits of each dimension (min, max)
