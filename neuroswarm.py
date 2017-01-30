@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+from __future__ import print_function
 import numpy as np
 
 class nnswarm:
@@ -35,6 +36,7 @@ class nnswarm:
 def example():
   import matplotlib.pyplot as plt
   from mpl_toolkits.mplot3d import Axes3D
+  import time
 
   # swarm dimensions and value limits
   dims = [8, 8]
@@ -48,8 +50,9 @@ def example():
     return np.sin(x) + np.cos(y) + noise * np.random.randn() * 0.1
 
   # randomly sample target function until convergence
-  batch_size = 50
-  for iters in range(200):
+  timer = time.time()
+  batch_size = 100
+  for iters in range(100):
     mse = 0.0
     for b in range(batch_size):
       xi = lims[0][0] + np.random.random() * (lims[0][1] - lims[0][0])
@@ -58,10 +61,11 @@ def example():
       g[xi, yi] = zi
       mse += (g[xi, yi] - zi) ** 2
     mse /= batch_size
-    print 'samples:', (iters + 1) * batch_size, 'batch_mse:', mse
+    print('samples:', (iters + 1) * batch_size, 'batch_mse:', mse)
+  print('elapsed time:', time.time() - timer)
 
   # get learned function
-  print 'mapping function...'
+  print('mapping function...')
   res = 100
   x = np.arange(lims[0][0], lims[0][1], (lims[0][1] - lims[0][0]) / res)
   y = np.arange(lims[1][0], lims[1][1], (lims[1][1] - lims[1][0]) / res)
